@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(206, 203, 203, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  margin-left: 5px;
+}
+header nav ul li a {
+  padding: 10px 15px;
+  background-color: rgb(85, 68, 68);
+  border-radius: 3px;
+}
+header nav ul li a:hover {
+  background-color: rgb(104, 80, 80);
+  color: #f3f3f3;
+}
+main {
+  border: 3px solid #f4f4f4;
+  padding-top: 100px;
+}
+main .sections {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(168, 110, 110);
+    border-radius: 20px;
+}
+.divs{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+main .sections  p {
+  padding: 5px;
+}
+main .sections  h2 {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 3px solid rgb(105, 88, 88);
+}
+#contactMe{
+    text-align: center;
+}
+#contactMe form{
+    display: inline;
+}
+#contactMe .nameAndEmail input{
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#contactMe textarea{
+  border-radius: 3px;
+  width: 500px;
+}
+footer{
+  text-align: center;
+}
+footer a {
+  color: #333;
+}

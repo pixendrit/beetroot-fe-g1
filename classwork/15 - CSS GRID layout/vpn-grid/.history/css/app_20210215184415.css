@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------ */
+.container {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Rubik';
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.main-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.main-header .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+   align-items: center;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-items: center;
+}
+.nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.main-nav a {
+ 
+  transition: all .3s ease-in-out;
+  color: #4F5665;
+}
+.main-nav a:hover {
+  color: #F53855;
+
+}
+.nav-buttons .btn {
+  height: 45px;
+  line-height: 43px;
+  color: #F53855;
+  border:1px solid #F53855;
+  text-align: center;
+  border-radius: 23px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+.nav-buttons .btn--empty {
+  border:0;
+  color: #0B132A;
+  
+}
+.nav-buttons .btn--empty:hover {
+ color: #F53855;
+}
+.nav-buttons .btn--reversed:hover {
+  color: white;
+  background-color: #F53855;
+}
+svg,img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========== HERO ============ */
+.hero {
+  padding-top: 42px;
+  width: 100%;
+}
+.hero .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.hero__text {
+  padding-top: 30px;
+}
+.hero h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.4em;
+  color: #0B132A;
+  margin-bottom: 20px;
+}
+.hero h1 strong {
+  font-weight: bold;
+}
+.hero p {
+  margin-bottom: 50px;
+ 
+  line-height: 1.9em;
+  color: #4F5665;
+}
+.hero .btn--big {
+  height: 60px;
+  line-height: 60px;
+  padding:0 77px;
+  border-radius: 10px;
+  background-color: #F53838;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  /* rgba(245, 56, 56, 0.35); */
+}
+/* =========== END HERO ============ */
+/* =========== STATS ============ */
+.stats {
+  width: 100%;
+}
+.stats .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.stat-item {
+  width: 100%;
+}
+.stat-item--icon {
+  width: 55px;
+  height: 55px;
+  background: #FFECEC;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius:50%;
+}
+.stat-item--user .stat-item__icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 11.3493C13.4548 11.3493 14.3705 10.97 15.0456 10.2949C15.7207 9.61975 16.1 8.70407 16.1 7.74929C16.1 6.79451 15.7207 5.87884 15.0456 5.20371C14.3705 4.52858 13.4548 4.14929 12.5 4.14929C11.5452 4.14929 10.6296 4.52858 9.95442 5.20371C9.27929 5.87884 8.90001 6.79451 8.90001 7.74929C8.90001 8.70407 9.27929 9.61975 9.95442 10.2949C10.6296 10.97 11.5452 11.3493 12.5 11.3493ZM7.39866 22.1493C5.57686 22.1493 4.04225 20.6179 4.73942 18.9347C5.16156 17.9156 5.7803 16.9896 6.56031 16.2096C7.34032 15.4296 8.26633 14.8108 9.28547 14.3887C10.3046 13.9666 11.3969 13.7493 12.5 13.7493C13.6031 13.7493 14.6954 13.9666 15.7145 14.3887C16.7337 14.8108 17.6597 15.4296 18.4397 16.2096C19.2197 16.9896 19.8385 17.9156 20.2606 18.9347C20.9578 20.6179 19.4232 22.1493 17.6014 22.1493H7.39866Z' fill='%23F53838'/%3E%3C/svg%3E%0A");
+}
+/* =========== END STATS ============ */
+

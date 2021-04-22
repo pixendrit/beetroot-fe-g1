@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------ */
+.container {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  font-family: 'Rubik';
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.main-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.main-header .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+   align-items: center;
+}
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-items: center;
+}
+.nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.main-nav a {
+ 
+  transition: all .3s ease-in-out;
+  color: #4F5665;
+}
+.main-nav a:hover {
+  color: #F53855;
+
+}
+.nav-buttons .btn {
+  height: 45px;
+  line-height: 43px;
+  color: #F53855;
+  border:1px solid #F53855;
+  text-align: center;
+  border-radius: 23px;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+.nav-buttons .btn--empty {
+  border:0;
+  color: #0B132A;
+  
+}
+.nav-buttons .btn--empty:hover {
+ color: #F53855;
+}
+.nav-buttons .btn--reversed:hover {
+  color: white;
+  background-color: #F53855;
+}
+svg,img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========== HERO ============ */
+.hero {
+  padding-top: 42px;
+  width: 100%;
+  margin-bottom: 103px;
+}
+.hero .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.hero__text {
+  padding-top: 30px;
+}
+.hero h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.4em;
+  color: #0B132A;
+  margin-bottom: 20px;
+}
+.hero h1 strong {
+  font-weight: bold;
+}
+.hero p {
+  margin-bottom: 50px;
+ 
+  line-height: 1.9em;
+  color: #4F5665;
+}
+.hero .btn--big {
+  height: 60px;
+  line-height: 60px;
+  padding:0 77px;
+  border-radius: 10px;
+  background-color: #F53838;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  /* rgba(245, 56, 56, 0.35); */
+}
+/* =========== END HERO ============ */
+/* =========== STATS ============ */
+.stats {
+  width: 100%;
+  margin-bottom: 95px;
+}
+.stats .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  box-shadow: 0px 7px 22px 13px rgb(0 0 0 / 6%);
+  padding-top: 37px;
+  padding-bottom: 37px;
+  border-radius: 10px;
+
+}
+.stat-item {
+  width: 100%;
+}
+.stat-item__icon {
+  width: 55px;
+  height: 55px;
+  background: #FFECEC;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius:50%;
+}
+.stat-item {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: end;
+  align-items: center;
+  border-right: 2px solid #EEEFF2;
+  padding:34px 0;
+}
+.stat-item:last-child {
+  border-right: 0;
+}
+.stat-item__icon {
+  margin-right: 18px;
+}
+.stat-item__text {
+  padding-left: 18px;
+  justify-self: flex-start;
+}
+.stat-item__text h4 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #0B132A;
+}
+.stat-item__text h4 span {
+  font-size: 20px;
+  color: #4F5665;
+  font-weight: 400;
+  float: left;
+  width: 100%;
+}
+.stat-item--user .stat-item__icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 11.3493C13.4548 11.3493 14.3705 10.97 15.0456 10.2949C15.7207 9.61975 16.1 8.70407 16.1 7.74929C16.1 6.79451 15.7207 5.87884 15.0456 5.20371C14.3705 4.52858 13.4548 4.14929 12.5 4.14929C11.5452 4.14929 10.6296 4.52858 9.95442 5.20371C9.27929 5.87884 8.90001 6.79451 8.90001 7.74929C8.90001 8.70407 9.27929 9.61975 9.95442 10.2949C10.6296 10.97 11.5452 11.3493 12.5 11.3493ZM7.39866 22.1493C5.57686 22.1493 4.04225 20.6179 4.73942 18.9347C5.16156 17.9156 5.7803 16.9896 6.56031 16.2096C7.34032 15.4296 8.26633 14.8108 9.28547 14.3887C10.3046 13.9666 11.3969 13.7493 12.5 13.7493C13.6031 13.7493 14.6954 13.9666 15.7145 14.3887C16.7337 14.8108 17.6597 15.4296 18.4397 16.2096C19.2197 16.9896 19.8385 17.9156 20.2606 18.9347C20.9578 20.6179 19.4232 22.1493 17.6014 22.1493H7.39866Z' fill='%23F53838'/%3E%3C/svg%3E%0A");
+}
+.stat-item--locations .stat-item__icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 9.54932C19 8.63006 18.8189 7.71981 18.4672 6.87053C18.1154 6.02125 17.5998 5.24958 16.9497 4.59957C16.2997 3.94956 15.5281 3.43394 14.6788 3.08216C13.8295 2.73038 12.9193 2.54932 12 2.54932C11.0807 2.54932 10.1705 2.73038 9.32122 3.08216C8.47194 3.43394 7.70026 3.94956 7.05025 4.59957C6.40024 5.24958 5.88463 6.02125 5.53284 6.87053C5.18106 7.71981 5 8.63006 5 9.54932C5 10.9363 5.41 12.2263 6.105 13.3143H6.097C8.457 17.0093 12 22.5493 12 22.5493L17.903 13.3143H17.896C18.6164 12.1907 18.9995 10.8841 19 9.54932ZM12 12.5493C11.2044 12.5493 10.4413 12.2332 9.87868 11.6706C9.31607 11.108 9 10.345 9 9.54932C9 8.75367 9.31607 7.99061 9.87868 7.428C10.4413 6.86539 11.2044 6.54932 12 6.54932Ca12.7956 6.54932 13.5587 6.86539 14.1213 7.428C14.6839 7.99061 15 8.75367 15 9.54932C15 10.345 14.6839 11.108 14.1213 11.6706C13.5587 12.2332 12.7956 12.5493 12 12.5493Z' fill='%23F53838'/%3E%3C/svg%3E%0A");
+}
+.stat-item--servers .stat-item__icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 3.54932H4.5C3.96957 3.54932 3.46086 3.76003 3.08579 4.1351C2.71071 4.51018 2.5 5.01888 2.5 5.54932V9.54932C2.5 10.0797 2.71071 10.5885 3.08579 10.9635C3.46086 11.3386 3.96957 11.5493 4.5 11.5493H20.5C21.0304 11.5493 21.5391 11.3386 21.9142 10.9635C22.2893 10.5885 22.5 10.0797 22.5 9.54932V5.54932C22.5 5.01888 22.2893 4.51018 21.9142 4.1351C21.5391 3.76003 21.0304 3.54932 20.5 3.54932ZM15.5 7.54932C15.5 8.1016 15.0523 8.54932 14.5 8.54932C13.9477 8.54932 13.5 8.1016 13.5 7.54932C13.5 6.99703 13.9477 6.54932 14.5 6.54932C15.0523 6.54932 15.5 6.99703 15.5 7.54932ZM19.5 7.54932C19.5 8.1016 19.0523 8.54932 18.5 8.54932C17.9477 8.54932 17.5 8.1016 17.5 7.54932C17.5 6.99703 17.9477 6.54932 18.5 6.54932C19.0523 6.54932 19.5 6.99703 19.5 7.54932ZM20.5 13.5493H4.5C3.96957 13.5493 3.46086 13.76 3.08579 14.1351C2.71071 14.5102 2.5 15.0189 2.5 15.5493V19.5493C2.5 20.0798 2.71071 20.5885 3.08579 20.9635C3.46086 21.3386 3.96957 21.5493 4.5 21.5493H20.5C21.0304 21.5493 21.5391 21.3386 21.9142 20.9635C22.2893 20.5885 22.5 20.0798 22.5 19.5493V15.5493C22.5 15.0189 22.2893 14.5102 21.9142 14.1351C21.5391 13.76 21.0304 13.5493 20.5 13.5493ZM15.5 17.5493C15.5 18.1016 15.0523 18.5493 14.5 18.5493C13.9477 18.5493 13.5 18.1016 13.5 17.5493C13.5 16.997 13.9477 16.5493 14.5 16.5493C15.0523 16.5493 15.5 16.997 15.5 17.5493ZM19.5 17.5493C19.5 18.1016 19.0523 18.5493 18.5 18.5493C17.9477 18.5493 17.5 18.1016 17.5 17.5493C17.5 16.997 17.9477 16.5493 18.5 16.5493C19.0523 16.5493 19.5 16.997 19.5 17.5493Z' fill='%23F53838'/%3E%3C/svg%3E%0A");
+}
+
+
+/* =========== END STATS ============ */
+/* =========== FEATURES ============ */
+
+.to-be-animated {
+  animation: blink 1s ease-in-out 0s infinite forwards alternate;
+}
+
+.to-be-animated:nth-of-type(1){
+  animation-delay: .2s;
+}
+.to-be-animated:nth-of-type(2){
+  animation-delay: .1s;
+
+}
+.to-be-animated:nth-of-type(3){
+  animation-delay: .6s;
+
+}
+.to-be-animated:nth-of-type(4){
+  animation-delay: .3s;
+}
+
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========== END FEATURES ============ */

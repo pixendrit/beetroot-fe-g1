@@ -1,0 +1,50 @@
+table {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+}
+
+.top {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.profile {
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+.linkedIn {
+    width: 70px;
+    height: auto;
+}
+
+.body {
+    background-color: beige;
+}
+.skype {
+    width: 20px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.bottom {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bottom p {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.epitech {
+    float: left;
+    padding-left: 18px;
+    width: 140px;
+    height: auto;
+}

@@ -1,0 +1,13 @@
+Cool plugins for vscode editor:
+
+
+Auto Rename Tag
+Auto Rename Tag automatically renames tags that you change.
+Removes the need to change your tag names twice.
+
+
+Live Server
+Live Server extension provides the live preview of your web application right within the editor.
+This is very handy and useful for the front end developers.
+
+

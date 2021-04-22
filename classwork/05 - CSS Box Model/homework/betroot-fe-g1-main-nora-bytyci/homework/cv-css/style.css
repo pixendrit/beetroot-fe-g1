@@ -1,0 +1,179 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General styles */
+hr {
+  display: none;
+}
+br {
+  display: none;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-image: url("./img/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+section {
+  margin: 55px 0px;
+}
+section h2 {
+  color: rgb(15, 74, 97);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+p {
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 25px 0px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 20px;
+}
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(15, 74, 97);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding-bottom: 5px;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid rgb(15, 74, 97);
+}
+
+/* Main styles */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Biografia styles */
+#biografia {
+  margin-top: 30px;
+}
+#biografia p {
+  margin-top: 15px;
+}
+
+/* Aftesite */
+#aftesite img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  margin: 30px 15px;
+}
+#aftesite p {
+  margin-top: 20px;
+  max-width: 30%;
+}
+/* Edukimi styles */
+#edukimi table {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid rgb(15, 74, 97);
+  color: #fff;
+}
+#edukimi th,
+#edukimi td {
+  padding: 30px;
+  text-align: left;
+}
+#edukimi thead tr {
+  background: rgb(15, 74, 97);
+}
+#edukimi td {
+  background: rgb(98, 117, 124);
+}
+
+/* Kontakti styles */
+#kontakti form {
+  margin-top: 30px;
+}
+#kontakti fieldset {
+  width: 50%;
+  border: 5px solid rgb(15, 74, 97);
+  border-radius: inherit;
+  padding: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+#kontakti legend {
+  line-height: 0;
+  padding: 0 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  color: rgb(15, 74, 97);
+}
+#kontakti label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#kontakti input[type="text"],
+#kontakti input[type="email"],
+#kontakti input[type="number"],
+#kontakti textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(15, 74, 97);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+#kontakti textarea {
+  resize: none;
+  height: 150px;
+  margin-top: 15px;
+}
+#kontakti button {
+  padding: 15px 55px;
+  background: rgb(15, 74, 97);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+#kontakti button:hover {
+  background: rgb(98, 117, 124);
+}
+#kontakti input[type="radio"] {
+  margin: 10px 20px 25px 20px;
+}
+
+/* Footer styles */
+footer {
+  background: rgb(15, 74, 97);
+  color: #fff;
+  padding: 45px 0px;
+  margin-top: 30px;
+}
