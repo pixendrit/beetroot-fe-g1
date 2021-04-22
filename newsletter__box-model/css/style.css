@@ -58,13 +58,13 @@ body {
   margin-right: 8px;
 }
 .input-group input[type="text"] {
-  width: 372px;
+  width: 371px;
   height: 52px;
   border-radius: 10px;
   color: #a9a9a9;
   border: 0;
   font-size: 18px;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 .input-group input[type="submit"] {
   height: 52px;
