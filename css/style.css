@@ -7,7 +7,7 @@ nav {
     max-width: 1400px;
 }
 
-.nav__logo, .nav__list, .nav__item, .nav__buttons, .nav__button{
+.nav__logo, .nav__list, .nav__item, .nav__buttons, .nav__button {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -132,6 +132,21 @@ header img {
     padding-right: 45px;
     margin-right: 45px;
 }
+.features__element h3 {
+    font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: #2F281E;
+}
+.features__element p {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #544837;
+
+}
 .features__button {
     float: right;
     margin-right: 690px;;
@@ -149,4 +164,26 @@ header img {
 .features {
     padding-bottom: 90px;
     padding-top: 11px;
+}
+
+ .effortless-validation {
+    margin-left: 145px;
+    margin-right: 145px;
+    margin-top: 120px;
+    margin-bottom: 101px;
+}
+.effortless-validation__left-side {
+    margin-bottom: 101px;
+    float: left;
+}
+.effortless-validation img {
+    margin-bottom: 101px;
+float: right;
+}
+.product-managers__right-side {
+    
+}
+.product-managers img {
+
+   
 }
